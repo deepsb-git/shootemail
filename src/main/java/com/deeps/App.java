@@ -21,8 +21,8 @@ public class App {
 		System.out.println("preparing to send message ...");
 		String message = "Hello , Dear, this is message for security check . ";
 		String subject = "CodersArea : Confirmation";
-		String to = "shreedeepak8@gmail.com";
-		String from = "nareshchandrabarik58pdp@gmail.com";
+		String to = "reciver email";
+		String from = "sender email";
 
 		sendMessage(message, subject, to, from);
 		sendAttach(message, subject, to, from);
@@ -53,7 +53,7 @@ public class App {
 
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("nareshchandrabarik58pdp@gmail.com", "nareshdeeps@123");
+				return new PasswordAuthentication("sender email", "password");
 			}
 
 		});
@@ -78,7 +78,7 @@ public class App {
 			
 			// file path 
 			
-			String path="C:\\Users\\USER\\Desktop\\contact.png";
+			String path="file path from desktop";
 			
 			MimeMultipart mimeMultipart = new MimeMultipart();
             //text
@@ -134,7 +134,7 @@ public class App {
 
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("nareshchandrabarik58pdp@gmail.com", "nareshdeeps@123");
+				return new PasswordAuthentication("sender email", "password");
 			}
 
 		});
